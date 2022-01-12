@@ -31,11 +31,11 @@ function ClientMenu(props: any) {
 
           <MenuButton title="MLU Bumper"></MenuButton>
 
-          <MenuButton title="Bonding Sunvisors"></MenuButton>
+          <MenuButton title="Sunvisors"></MenuButton>
 
-          <MenuButton title="Bonding HRI"></MenuButton>
+          <MenuButton title="HRI"></MenuButton>
 
-          <MenuButton title="Bonding Transition Fairings"></MenuButton>
+          <MenuButton title="Transition Fairings"></MenuButton>
         </div>
       </div>
     </>
