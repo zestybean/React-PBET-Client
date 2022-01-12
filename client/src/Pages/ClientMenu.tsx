@@ -10,32 +10,32 @@ function ClientMenu(props: any) {
         <div className="grid grid-cols-4 gap-2">
           <MenuButton title="Mainline" />
 
-          <MenuButton title="Spoven 1"></MenuButton>
+          <MenuButton title="Spoven 1" />
 
-          <MenuButton title="Spoven 2"></MenuButton>
+          <MenuButton title="Spoven 2" />
 
-          <MenuButton title="Spoven 3"></MenuButton>
+          <MenuButton title="Spoven 3" />
         </div>
       </div>
 
       <div className="  p-10">
         <h1 className="block text-2xl font-bold py-6">Assembly</h1>
         <div className="grid grid-cols-4 gap-2">
-          <MenuButton title="HZ Bumper"></MenuButton>
+          <MenuButton title="HZ Bumper" />
 
-          <MenuButton title="HZ Front"></MenuButton>
+          <MenuButton title="HZ Front" />
 
-          <MenuButton title="HZ Rear"></MenuButton>
+          <MenuButton title="HZ Rear" />
 
-          <MenuButton title="HZ Fender"></MenuButton>
+          <MenuButton title="HZ Fender" />
 
-          <MenuButton title="MLU Bumper"></MenuButton>
+          <MenuButton title="MLU Bumper" />
 
-          <MenuButton title="Sunvisors"></MenuButton>
+          <MenuButton title="Sunvisors" />
 
-          <MenuButton title="HRI"></MenuButton>
+          <MenuButton title="HRI" />
 
-          <MenuButton title="Transition Fairings"></MenuButton>
+          <MenuButton title="Transition Fairings" />
         </div>
       </div>
     </>
