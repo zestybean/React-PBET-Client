@@ -11,23 +11,16 @@ var router = express.Router();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
-app.use("/api", router);
 
-router.use((request, response, next) => {
-  console.log("Middleware");
-  //next();
-});
+app.post("/clientlogin", (req, res) => {
+  const pbID = req.body.pbetID;
+  const pbPass = req.body.pbetPass;
 
-router.route("/clientlogin").get((request, response) => {
-  dboperations.getPbetUsers().then((res) => {
-    console.log("Server results:");
-    console.log(res);
-  });
-});
+  console.log(pbID);
+  console.log(pbPass);
 
-router.route("/clientlogin/:pbetID:pbetPass").get((request, response) => {
-  dboperations.getPbetUser(request.params.pbetID).then((res) => {
-    console.log("Server results:");
+  dboperations.getPbetUser(pbID, pbPass).then((res) => {
+    console.log("Results: ");
     console.log(res);
   });
 });

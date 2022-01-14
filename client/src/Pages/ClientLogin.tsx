@@ -11,7 +11,7 @@ const validationSchema = yup.object({
 
 const login = (values: any) => {
   axios
-    .post("http://localhost:8090/api/clientlogin", {
+    .post("http://localhost:8090/clientlogin", {
       pbetID: values.pbetID,
       pbetPass: values.pbetPass,
     })

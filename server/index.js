@@ -21,40 +21,6 @@ db.connect().then(() => {
   console.log("Connected to PBET_TEST");
 });
 
-app.post("/clientlogin", (req, res) => {
-  const pbID = req.body.pbetID;
-  const pbPass = req.body.pbetPass;
-
-  console.log(pbID);
-  console.log(pbPass);
-
-  db.query(
-    `SELECT * FROM dbo.pbetLogin where pbetID=${pbID} and pbetPass=${pbPass}`
-  )
-    .then((res) => {
-      console.log(res);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-
-  //   db.query(
-  //     "SELECT * FROM pbetLogin WHERE pbetID = ? AND pbetPass = ?",
-  //     [pbID, pbPass],
-  //     (err, result) => {
-  //       if (err) {
-  //         res.send({ err: err });
-  //       }
-
-  //       if (result) {
-  //         res.send(result);
-  //       } else {
-  //         res.send({ message: "Wrong username/password combination" });
-  //       }
-  //     }
-  //   );
-});
-
 app.get("/", (req, res) => {});
 
 app.listen(3001, () => {
